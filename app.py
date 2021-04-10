@@ -24,7 +24,7 @@ def hello_name():
   "text"    : "look what the street kicked up",
 }
         res = requests.post('https://api.groupme.com/v3/bots/post', json=jason)
-    elif "what's up shimbo" in body["text"].lower():
+    elif "what’s up shimbo" in body["text"].lower():
         print("yessir")
         jason = {
   "bot_id"  : "5f28714a19ba9e7da997cc8cfe",
