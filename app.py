@@ -48,10 +48,15 @@ def hello_name():
         res = requests.post('https://api.groupme.com/v3/bots/post', json=jason)
     elif "motivate me shimbo" in body["text"].lower():
         print("yeeee")
+        good = False
+        while not good:
+            try:
+                x = requests.get('http://api.forismatic.com/api/1.0/?method=getQuote&format=json&lang=en')
+                body = x.json()
 
-        x = requests.get('http://api.forismatic.com/api/1.0/?method=getQuote&format=json&lang=en')
-        x = x.replace("\n", "")
-        body = x.json()
+                good = True
+            except:
+                print("failed", x)
         jason = {
   "bot_id"  : "5f28714a19ba9e7da997cc8cfe",
   "text"    : body["quoteText"],
