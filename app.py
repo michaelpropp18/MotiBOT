@@ -50,7 +50,7 @@ def hello_name():
         print("yeeee")
 
         x = requests.get('http://api.forismatic.com/api/1.0/?method=getQuote&format=json&lang=en')
-        print("h")
+        x = x.replace("\n", "")
         body = x.json()
         jason = {
   "bot_id"  : "5f28714a19ba9e7da997cc8cfe",
