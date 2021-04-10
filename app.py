@@ -19,7 +19,7 @@ def hello_name():
     if "yo shimbo" in body["text"]:
         print("yes")
         jason = {
-  "bot_id"  : "6abec63d5dcff0919fce218f12",
+  "bot_id"  : "31d6fad83bded536f1550afa45",
   "text"    : "look what the street kicked up",
 }
         res = requests.post('https://api.groupme.com/v3/bots/post', json=jason)
