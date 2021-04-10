@@ -57,7 +57,7 @@ def hello_name():
   "text"    : body["quoteText"],
 }
         res = requests.post('https://api.groupme.com/v3/bots/post', json=jason)
-    elif "round table" in body["text"].lower() or "roundtable" in body["text"].lower():
+    elif ("round table" in body["text"].lower() or "roundtable" in body["text"].lower()) and body["sender_id"] != "bot":
         print("yeeee")
         text = roundtable()
         print("h")
