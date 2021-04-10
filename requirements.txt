@@ -1,17 +1,9 @@
-# Editable install with no version control (6476-Spring2021-Proj3==1.0.0)
--e /Users/otissmith/cs6476/proj3
-# Editable install with no version control (6476-Spring2021-Proj4==1.0.0)
--e /Users/otissmith/cs6476/proj4 updated full
 attrs==20.3.0
 brotlipy==0.7.0
 certifi==2020.6.20
-cffi @ file:///opt/concourse/worker/volumes/live/8fbed55e-0573-4246-7cf9-162067141d5e/volume/cffi_1605538070636/work
-chardet @ file:///opt/concourse/worker/volumes/live/a5a7c56b-23cb-471d-7404-f4130b8aed33/volume/chardet_1605303184529/work
 click==7.1.2
 clowncar==0.2.0
 conda==4.9.2
-conda-package-handling @ file:///opt/concourse/worker/volumes/live/a7e34989-4c54-4cb6-4156-4e58ee270730/volume/conda-package-handling_1603018121300/work
-cryptography @ file:///opt/concourse/worker/volumes/live/62f9527a-361c-47e5-5709-227a4a523add/volume/cryptography_1605544472602/work
 Flask==1.1.2
 groupy==0.5.4
 GroupyAPI==0.10.3
@@ -25,19 +17,14 @@ packaging==20.9
 pluggy==0.13.1
 py==1.10.0
 pycosat==0.6.3
-pycparser @ file:///tmp/build/80754af9/pycparser_1594388511720/work
-pyOpenSSL @ file:///tmp/build/80754af9/pyopenssl_1605545627475/work
 pyparsing==2.4.7
-PySocks @ file:///opt/concourse/worker/volumes/live/85a5b906-0e08-41d9-6f59-084cee4e9492/volume/pysocks_1594394636991/work
 pytest==6.2.2
 redis==3.5.3
 requests==2.20.1
 rq==1.8.0
 ruamel-yaml==0.15.87
-six @ file:///opt/concourse/worker/volumes/live/5b31cb27-1e37-4ca5-6e9f-86246eb206d2/volume/six_1605205320872/work
 toml==0.10.2
 tornado==6.1
-tqdm @ file:///tmp/build/80754af9/tqdm_1605303662894/work
 typing==3.7.4.3
 urllib3==1.24.3
 Werkzeug==1.0.1
