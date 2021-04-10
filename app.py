@@ -39,7 +39,7 @@ def hello_name():
         body = x.json()
         jason = {
   "bot_id"  : "5f28714a19ba9e7da997cc8cfe",
-  "text"    : body.quoteText,
+  "text"    : body["quoteText"],
 }
 
         res = requests.post('https://api.groupme.com/v3/bots/post', json=jason)
