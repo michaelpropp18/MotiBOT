@@ -12,9 +12,9 @@ def hello():
 
 
 @app.route('/callback', methods = ['POST'])
-def hello_name(name):
+def hello_name():
     print(request)
-    return "Hello {}!".format(name)
+    return "did something"
 
 if __name__ == '__main__':
     app.run()
