@@ -16,6 +16,7 @@ def hello():
 def hello_name():
     print(request.get_json(), type(request))
     body = request.get_json()
+    print(body["text"].lower())
     if "yo shimbo" in body["text"].lower():
         print("yes")
         jason = {
@@ -24,7 +25,7 @@ def hello_name():
 }
         res = requests.post('https://api.groupme.com/v3/bots/post', json=jason)
     elif "what's up shimbo" in body["text"].lower():
-        print("yes")
+        print("yessir")
         jason = {
   "bot_id"  : "5f28714a19ba9e7da997cc8cfe",
   "text"    : "how the fuck is up?",
