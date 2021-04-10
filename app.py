@@ -17,7 +17,7 @@ def roundtable():
     topics = []
     i = 0
     while len(topics) < 3:
-        if x[i]['word'] not in ['many', 'other', 'various']:
+        if x[i]['word'] not in ['many', 'other', 'various', 'several', 'few']:
             topics.append(x[i]['word'])
         i += 1
     return ("Hey guys, we will be holding a roundtable discussion about " + random_topic + "." + " We will be discussing " + topics[0] + " " + random_topic + ", " + topics[1] + " " + random_topic + ", and " + topics[2] + " " + random_topic + ".")
@@ -58,7 +58,7 @@ def hello_name():
 }
         res = requests.post('https://api.groupme.com/v3/bots/post', json=jason)
     elif ("round table" in body["text"].lower() or "roundtable" in body["text"].lower()) and body["sender_id"] != "bot":
-        print("yeeee")
+        print("yeeee", body["sender_id"])
         text = roundtable()
         print("h")
         jason = {
