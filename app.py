@@ -1,6 +1,7 @@
 import os
 from flask import Flask
-from requests.api import request
+from flask import request
+import requests
 
 
 app = Flask(__name__)
@@ -13,7 +14,17 @@ def hello():
 
 @app.route('/callback', methods = ['POST'])
 def hello_name():
-    print(request)
+    print(request.get_json(), type(request))
+    body = request.get_json()
+    if "yo shimbo" in body["text"]:
+        print("yes")
+        jason = {
+  "bot_id"  : "6abec63d5dcff0919fce218f12",
+  "text"    : "look what the street kicked up",
+}
+        res = requests.post('https://api.groupme.com/v3/bots/post', json=jason)
+        
+
     return "did something"
 
 if __name__ == '__main__':
