@@ -35,7 +35,7 @@ def hello_name():
     if "yo shimbo" in body["text"].lower():
         print("yes")
         jason = {
-  "bot_id"  : "2b15d13a55a59e355c1aec121d",
+  "bot_id"  : "5f28714a19ba9e7da997cc8cfe",
   "text"    : "look what the street kicked up",
 }
         res = requests.post('https://api.groupme.com/v3/bots/post', json=jason)
@@ -58,7 +58,7 @@ def hello_name():
             except:
                 print("failed", x)
         jason = {
-  "bot_id"  : "2b15d13a55a59e355c1aec121d",
+  "bot_id"  : "5f28714a19ba9e7da997cc8cfe",
   "text"    : body["quoteText"],
 }
         res = requests.post('https://api.groupme.com/v3/bots/post', json=jason)
@@ -67,7 +67,7 @@ def hello_name():
         text = roundtable()
         print("h")
         jason = {
-  "bot_id"  : "2b15d13a55a59e355c1aec121d",
+  "bot_id"  : "5f28714a19ba9e7da997cc8cfe",
   "text"    : text,
 }
         res = requests.post('https://api.groupme.com/v3/bots/post', json=jason)
